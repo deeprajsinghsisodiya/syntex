@@ -147,5 +147,33 @@ class RPSCustomPainter extends CustomPainter{
 }
 
   
-  
+  #Completer
+        
+        final done = Completer<void>();
+  runApp(MyApp4(done:done ,));
+       
+        
+ class MyApp4 extends StatefulWidget {
+  const MyApp4({required this.done,Key? key}) : super(key: key);
+        
+ final Completer<void> done;
+
+  @override
+  State<MyApp4> createState() => _MyApp4State();
+}
+class _MyApp4State extends State<MyApp4> {
+  @override
+  void initState() {
+    super.initState();
+    timerfunction();
+  }
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(home: Splash()
+    );
+  }
+  timerfunction(){
+    Timer(Duration(seconds: 2), () =>widget.done.complete());
+  }
+}
   
