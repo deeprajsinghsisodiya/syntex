@@ -1,5 +1,5 @@
 # syntex
-
+```bash
 #State notifier
 final progressInt = StateNotifierProvider<ProgressIntNotifier, int>((ref) => ProgressIntNotifier());
 
@@ -96,8 +96,10 @@ class Commett extends Equatable {
   // List<Object> get props => [createdAt];
   // List<Object?> get props => throw UnimplementedError();
 }
-  
-  
+```
+---  
+
+  ```bash
   #Responce from Api
   final response = await http.post(Uri.parse('https://reqres.in/api/users?delay=3'),
       headers: {
@@ -109,10 +111,10 @@ class Commett extends Equatable {
       },
     );
   
+ ``` 
   
-  
-  #Custom Painter
-  
+  #### Custom Painter
+  ```bash
 //in Build
   child: CustomPaint(
               size: Size(MediaQuery.of(context).size.width / 9, size.height*.022),
@@ -145,9 +147,13 @@ class RPSCustomPainter extends CustomPainter{
   }
 
 }
+```
+---
 
-  
-  #Completer
+  #### Completer
+
+  ```bash
+
         
         final done = Completer<void>();
   runApp(MyApp4(done:done ,));
@@ -176,4 +182,6 @@ class _MyApp4State extends State<MyApp4> {
     Timer(Duration(seconds: 2), () =>widget.done.complete());
   }
 }
-  
+```
+
+  // Container(color: Colors.primaries[ index % Colors.primaries.length],),
