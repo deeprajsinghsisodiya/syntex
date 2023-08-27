@@ -101,7 +101,7 @@ class Commett extends Equatable {
 ---  
 
   ```dart
-  #Responce from Api
+  //Responce from Api
   final response = await http.post(Uri.parse('https://reqres.in/api/users?delay=3'),
       headers: {
         // 'Content-type': 'application/json; charset=UTF-8',
