@@ -1,6 +1,7 @@
 # syntex
+
 ```dart
-#State notifier
+//State notifier
 final progressInt = StateNotifierProvider<ProgressIntNotifier, int>((ref) => ProgressIntNotifier());
 
 class ProgressIntNotifier extends StateNotifier<int> {
@@ -10,7 +11,7 @@ class ProgressIntNotifier extends StateNotifier<int> {
 }
   
   
-#Async Notifier Family /Equitable
+//Async Notifier Family /Equitable
   
   Scaffold(
       body: ref.watch(provider(ddd)).when(
