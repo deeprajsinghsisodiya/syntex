@@ -184,5 +184,8 @@ class _MyApp4State extends State<MyApp4> {
   }
 }
 ```
+--- 
 
-  // Container(color: Colors.primaries[ index % Colors.primaries.length],),
+```dart
+Container(color: Colors.primaries[ index % Colors.primaries.length],),
+```
