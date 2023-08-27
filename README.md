@@ -1,5 +1,5 @@
 # syntex
-```bash
+```dart
 #State notifier
 final progressInt = StateNotifierProvider<ProgressIntNotifier, int>((ref) => ProgressIntNotifier());
 
@@ -99,7 +99,7 @@ class Commett extends Equatable {
 ```
 ---  
 
-  ```bash
+  ```dart
   #Responce from Api
   final response = await http.post(Uri.parse('https://reqres.in/api/users?delay=3'),
       headers: {
@@ -114,7 +114,7 @@ class Commett extends Equatable {
  ``` 
   
   #### Custom Painter
-  ```bash
+  ```dart
 //in Build
   child: CustomPaint(
               size: Size(MediaQuery.of(context).size.width / 9, size.height*.022),
@@ -152,7 +152,7 @@ class RPSCustomPainter extends CustomPainter{
 
   #### Completer
 
-  ```bash
+  ```dart
 
         
         final done = Completer<void>();
